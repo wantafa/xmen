@@ -18,13 +18,7 @@ class HomeController extends Controller
         $no = 1;
         $no1 = 1;
 
-        $cari_superhero = $request->cari_superhero;
-        $cari_skill = $request->cari_skill;
- 
-        $superhero_cari = Superhero::where('nama','like',"%".$cari_superhero."%")->get();
-        $skill_cari = Skill::where('nama','like',"%".$cari_skill."%")->get();
-
-        return view('xmen', compact('superhero_laki','superhero_perempuan', 'superhero','skill','no','no1','cari_superhero','cari_skill'));
+        return view('xmen', compact('superhero_laki','superhero_perempuan', 'superhero','skill','no','no1'));
     }
 
     public function cari_superhero(Request $request)
@@ -42,7 +36,7 @@ class HomeController extends Controller
 		->paginate();
  
         
-        return view('xmen', compact('superhero_laki','superhero_perempuan', 'superhero','skill','no','no1','cari_superhero','cari_skill'));
+        return view('xmen', compact('superhero_laki','superhero_perempuan', 'superhero','skill','no','no1','cari'));
     }
     
     public function cari_skill(Request $request)
@@ -60,6 +54,6 @@ class HomeController extends Controller
 		->paginate();
  
         
-        return view('xmen', compact('superhero_laki','superhero_perempuan', 'superhero','skill','no','no1','cari_skill','cari_skill'));
+        return view('xmen', compact('superhero_laki','superhero_perempuan', 'superhero','skill','no','no1','cari'));
     }
 }
