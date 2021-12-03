@@ -16,6 +16,7 @@ class CreateSuperheroTable extends Migration
         Schema::create('superhero', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nama', 20);
+            $table->string('foto', 50);
             $table->string('jenis_kelamin', 20);
             $table->timestamps();
         });
