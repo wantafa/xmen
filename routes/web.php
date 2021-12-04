@@ -15,7 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/slicing', function() {
+    return view('slicing');
+});
+Route::get('/xmen', 'HomeController@index')->name('home');
 Route::get('/', 'HomeController@cari_superhero')->name('cari.superhero');
 Route::get('/cari', 'HomeController@cari_skill')->name('cari.skill');
 
