@@ -2,7 +2,7 @@
 
 1. ![Topologi](https://user-images.githubusercontent.com/62131383/144555850-a827109e-0acf-4c04-9585-3648203eaf00.png)
 
-2. Bahasa yang digunakan bisa menggunakan bahasa pemrograman PHP.
+2. Bahasa yang digunakan bisa menggunakan HTML dan CSS dengan Framework Bootstrap.
 
 3. Domain Name Server atau DNS adalah sebuah sistem yang menghubungkan Uniform Resource Locator (URL) dengan Internet Protocol Address (IP Address).
 
